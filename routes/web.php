@@ -16,4 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = ['name' => 'Arianna'];
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/recipes', function () {
+    return view('links.recipes');
+})->name('recipes');
+
+Route::get('/videos', function () {
+    return view('links.videos');
+})->name('videos');
+
+Route::get('/gallery', function () {
+    return view('links.gallery');
+})->name('gallery');
+

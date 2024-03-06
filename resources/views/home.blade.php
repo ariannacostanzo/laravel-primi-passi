@@ -8,5 +8,10 @@
 </head>
 <body>
     Hello from {{$name}}
+    <ul>
+        <li><a href="{{route('recipes')}}">Vai alle ricette</a></li>
+        <li><a href="{{route('videos')}}">Vai ai video</a></li>
+        <li><a href="{{route('gallery')}}">Vai alle immagini</a></li>
+    </ul>
 </body>
 </html>
